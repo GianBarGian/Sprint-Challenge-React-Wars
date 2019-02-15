@@ -26,14 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+      React is a Javascript library for building user interface. It let us change the page dinamically more easily then using vanilla js. Using states it become easy for us to change just the parts in our website that need to be changed (usually based on user interaction), and react help us immensely to do that.
 
 - [ ] What does it mean to _think_ in react?
 
+      Thinking in React is all about breaking your project in different components (that are mostly “stupid”) then inject the data they need from a parent object (usually). Then this components will pass the data back to the main file (index), usually rendering something. 
 
 - [ ] Describe state.
 
+      In React State is  represented by an object containing all the data that could vary in our website. While the current values represent the current state of the app when one or more of this data vary we will have different behaviours happening.
 
 - [ ] Describe props.
+
+      Props mean properties, and they act like arguments in vanilla JS, so we use them to pass inputs to our react components. Props are read-only.
 
 ## Project Set Up
 
