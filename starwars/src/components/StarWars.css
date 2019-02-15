@@ -1,8 +1,4 @@
-.character {
-    font-size: 1.6rem;
-    padding-bottom: 50px;
-    
-}
+
 
 .text-container {
     display: flex;
@@ -13,11 +9,16 @@
 .character-list {
     width: 46%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
 .character-card {
     background: rgba(165, 77, 77, 0.329);
+    width: 45%;
+    margin-right: 2%;
+    margin-bottom: 30px;
 }
 
 ul{
