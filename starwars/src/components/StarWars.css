@@ -1,4 +1,14 @@
 .character {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-bottom: 50px;
+}
+
+.character span {
+    color: rgb(70, 10, 10);
+}
+
+.character-list {
+    width: 46%;
+    margin: 0 auto;
+    text-align: start;
 }
