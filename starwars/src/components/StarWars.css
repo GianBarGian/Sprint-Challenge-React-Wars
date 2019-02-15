@@ -1,14 +1,41 @@
 .character {
     font-size: 1.6rem;
     padding-bottom: 50px;
+    
 }
 
-.character span {
-    color: rgb(70, 10, 10);
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
 }
 
 .character-list {
     width: 46%;
     margin: 0 auto;
-    text-align: start;
+    
+}
+
+.character-card {
+    background: rgba(165, 77, 77, 0.329);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.buttons {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 2.5%;
+    top: 45%;
+}
+
+.buttons button {
+    font-size: 1.5rem;
+    color: rgb(70, 10, 10);
+    background: unset;
+
 }
