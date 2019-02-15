@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList'
+import ButtonList from './components/ButtonList';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      previous: "",
+      next: "",
     };
   }
 
@@ -22,17 +26,30 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, previous: data.previous, next: data.next });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  updateStarwarsChar = (string) => {
+    if (string === "previous") {
+      this.getCharacters(this.state.previous);
+    }
+    if (string === "next") {
+      this.getCharacters(this.state.next);
+    }
+  }
+
+
   render() {
+    const { starwarsChars } = this.state;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList starwarsChars={starwarsChars}/>
+        <ButtonList updateStarwarsChar={this.updateStarwarsChar} />
       </div>
     );
   }
